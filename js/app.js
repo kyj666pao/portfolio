@@ -1,0 +1,56 @@
+// -------make navBar transparent after scroll down------
+const navElm = document.querySelector("nav")
+const navAnchorElm = document.querySelectorAll("nav ul li a")
+const contactSectionElm = document.querySelector("#contact")
+
+window.addEventListener("scroll", e => {
+    if (window.scrollY > 650) {
+        navElm.style.backgroundColor = "rgba(210, 168, 150, 0.7)"
+        navElm.style.color = "white"
+        navAnchorElm.forEach(a => {
+            a.style.color = "rgb(92, 89, 89)"
+        });
+        contactSectionElm.classList.add("show")
+    } else {
+        navElm.style = ""
+        navAnchorElm.forEach(a => {
+            a.style.color = "rgb(255, 123, 0)"
+            // a.style.color = "rgb(92, 89, 89)"
+        })
+        contactSectionElm.classList.remove("show")
+    }
+})
+
+
+// typed.js -----home page typing animation -----
+const typed = new Typed("#typed", {
+    strings: ["Fullstack Developer", "Software Engineer", "Frontend Designer"],
+    typeSpeed: 100,
+    startDelay: 500,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+    smartBackspace: false,
+})
+
+
+// 
+// const projectCardElm = document.querySelectorAll(".project-card")
+// console.log(projectCardElm)
+// const projectDetailContainer = querySelectorAll(".project-detail-container")
+
+// projectCardElm.forEach(projectCard => {
+//     const projectDetailCardContainer = projectCard.children
+    
+//     projectCard.addEventListener("mouseover", (e) => {
+//         console.log(projectDetailCardContainer.classList)
+//         projectDetailCardContainer[0].classList.add("show");
+//     })
+// });
+
+const projectCardElm = document.querySelector(".project-card")
+const projectDetailCardContainer = projectCardElm.children
+console.log(projectDetailCardContainer[1])
+projectDetailCardContainer[1].addEventListener("mouseover", (e)=> {
+    projectDetailCardContainer[1].classList.add("show")
+})
