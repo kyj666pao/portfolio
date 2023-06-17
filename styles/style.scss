@@ -87,7 +87,7 @@ section {
   }
 }
 
-nav {
+.navbar {
   width: 100vw;
   padding: 8px 0;
   background-color: white;
@@ -110,6 +110,50 @@ nav {
         // color: rgb(255, 123, 0);
       }
     }
+  }
+}
+
+.nav-burger {
+  position: fixed;
+  z-index: 50;
+  top: 60px;
+  right: 10px;
+  opacity: 0;
+  pointer-events: none;
+  // #burger0 {
+  //   height: 80px;
+  // }
+  #burger {
+    height: 60px;
+    // opacity: 0;
+    // pointer-events: none;
+  }
+
+  div {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 36px 16px;
+    width: 90vw;
+    height: 40vh;
+    position: fixed;
+    top: 20px;
+    right: 4vw;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.nav-burger:hover {
+  // #burger0 {
+  //   opacity: 0;
+  //   pointer-events: none;
+  // }
+  // #burger {
+  //   opacity: 1;
+  // }
+  div {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
@@ -334,7 +378,7 @@ nav {
 
 #contact {
   width: 80px;
-  height: 250px;
+  height: 300px;
   background: transparent;
   position: fixed;
   bottom: 10px;
@@ -376,7 +420,7 @@ footer {
 
 @media screen and (max-width: 1100px) {
   #about {
-    height: 725px;
+    height: fit-content;
     padding-top: 200px;
     display: flex;
     flex-direction: column;
@@ -399,26 +443,23 @@ footer {
     }
     .resume {
       right: 25vw;
-      top: 400px;
+      top: 460px;
     }
     #me {
-      width: 720px;
+      width: 80vw;
+      min-width: 450px;
+      height: fit-content;
       position: static;
-      margin: 16px 0 16px 0;
-      padding: 16px 24px;
-      p {
-        font-size: 1.25rem;
-        margin-top: 24px;
-      }
-      
+      margin: 16px 0 64px 0;
+      padding: 16px 8px;
     }
   }
 
   #skill {
     .skill-list {
-      width: 600px;
+      width: 85vw;
       .logo {
-        height: 40px;
+        height: 36px;
       }
     }
   }
@@ -450,7 +491,7 @@ footer {
               padding: 8px 0;
             }
             p {
-              color: white;
+              color: rgb(237, 231, 215);
               text-align: center;
             }
             .link {
@@ -490,4 +531,18 @@ footer {
       }
     }
   }
+
+}
+
+@media screen and (max-width: 790px) {
+  // .navbar {
+  //   ul {
+  //     opacity: 0;
+  //     pointer-events: none;
+  //   }
+  // }
+  // .nav-burger {
+  //   opacity: 1;
+  //   pointer-events: auto;
+  // }
 }

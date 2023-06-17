@@ -88,7 +88,7 @@ section {
   animation: arrow 1.5s ease-in-out infinite alternate;
 }
 
-nav {
+.navbar {
   width: 100vw;
   padding: 8px 0;
   background-color: white;
@@ -98,17 +98,46 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
-nav ul {
+.navbar ul {
   display: flex;
   list-style-type: none;
   right: 36px;
 }
-nav ul li a {
+.navbar ul li a {
   text-decoration: none;
   margin: 0 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(92, 89, 89);
+}
+
+.nav-burger {
+  position: fixed;
+  z-index: 50;
+  top: 60px;
+  right: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-burger #burger {
+  height: 60px;
+}
+.nav-burger div {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 36px 16px;
+  width: 90vw;
+  height: 40vh;
+  position: fixed;
+  top: 20px;
+  right: 4vw;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-burger:hover div {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #about {
@@ -317,7 +346,7 @@ nav ul li a {
 
 #contact {
   width: 80px;
-  height: 250px;
+  height: 300px;
   background: transparent;
   position: fixed;
   bottom: 10px;
@@ -357,7 +386,8 @@ footer {
 }
 @media screen and (max-width: 1100px) {
   #about {
-    height: 725px;
+    height: -moz-fit-content;
+    height: fit-content;
     padding-top: 200px;
     display: flex;
     flex-direction: column;
@@ -382,23 +412,22 @@ footer {
   }
   #about .resume {
     right: 25vw;
-    top: 400px;
+    top: 460px;
   }
   #about #me {
-    width: 720px;
+    width: 80vw;
+    min-width: 450px;
+    height: -moz-fit-content;
+    height: fit-content;
     position: static;
-    margin: 16px 0 16px 0;
-    padding: 16px 24px;
-  }
-  #about #me p {
-    font-size: 1.25rem;
-    margin-top: 24px;
+    margin: 16px 0 64px 0;
+    padding: 16px 8px;
   }
   #skill .skill-list {
-    width: 600px;
+    width: 85vw;
   }
   #skill .skill-list .logo {
-    height: 40px;
+    height: 36px;
   }
   #project #projects-list {
     width: 90vw;
@@ -430,7 +459,7 @@ footer {
     padding: 8px 0;
   }
   #project #projects-list .project-card .project-detail-container .project-detail p {
-    color: white;
+    color: rgb(237, 231, 215);
     text-align: center;
   }
   #project #projects-list .project-card .project-detail-container .project-detail .link {
