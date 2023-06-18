@@ -247,3 +247,10 @@
     fill: #198036;
   }
 }
+
+@media screen and (max-width: 790px) {
+  .landing-animation {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
