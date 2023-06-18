@@ -56,7 +56,6 @@ section {
   justify-content: center;
   align-items: center;
   background-color: #f09a6857;
-  font-family: "Varela Round", sans-serif;
   #space {
     height: 80px;
   }
@@ -65,6 +64,7 @@ section {
     color: white;
     span {
       color: #dbd7a9;
+      font-family: 'Salsa', cursive;
     }
   }
   div {
@@ -72,15 +72,12 @@ section {
     h3 {
       font-size: 2.5rem;
       color: #dbd7a9;
+      span {
+        font-family: 'Salsa', cursive;
+      }
     }
   }
   
-  #home-contact-link {
-    margin: 32px;
-    img {
-      width: 60px;
-    }
-  }
   #next-section {
     width: 100px;
     margin-top: 50px;
@@ -614,6 +611,39 @@ footer {
           height: 40px;
         }
       }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  #skill {
+    .skill-list {
+      padding-top: 20px;
+      .logo {
+        height: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 850px) {
+  #home {
+    h2, div, #next-section {
+      transform: translate(0, 40px);
+    }
+  } 
+}
+
+@media screen and (min-height: 990px) {
+  #home {
+    h2 {
+      span {
+        color:rgb(38, 57, 228);
+      }
+    }
+    span {
+      color:rgb(38, 57, 228);
     }
   }
   

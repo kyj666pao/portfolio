@@ -58,7 +58,6 @@ section {
   justify-content: center;
   align-items: center;
   background-color: rgba(240, 154, 104, 0.3411764706);
-  font-family: "Varela Round", sans-serif;
 }
 #home #space {
   height: 80px;
@@ -69,6 +68,7 @@ section {
 }
 #home h2 span {
   color: #dbd7a9;
+  font-family: "Salsa", cursive;
 }
 #home div {
   width: 400px;
@@ -77,11 +77,8 @@ section {
   font-size: 2.5rem;
   color: #dbd7a9;
 }
-#home #home-contact-link {
-  margin: 32px;
-}
-#home #home-contact-link img {
-  width: 60px;
+#home div h3 span {
+  font-family: "Salsa", cursive;
 }
 #home #next-section {
   width: 100px;
@@ -576,5 +573,26 @@ footer #footer-contact a img {
   }
   footer #footer-contact a img {
     height: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #skill .skill-list {
+    padding-top: 20px;
+  }
+  #skill .skill-list .logo {
+    height: 28px;
+  }
+}
+@media screen and (min-height: 850px) {
+  #home h2, #home div, #home #next-section {
+    transform: translate(0, 40px);
+  }
+}
+@media screen and (min-height: 990px) {
+  #home h2 span {
+    color: rgb(38, 57, 228);
+  }
+  #home span {
+    color: rgb(38, 57, 228);
   }
 }/*# sourceMappingURL=style.css.map */
