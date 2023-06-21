@@ -213,6 +213,8 @@ section {
   display: flex;
   font-size: 20px;
   padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
 #about .resume p img {
   width: 20px;
@@ -310,7 +312,6 @@ section {
 #project #projects-list .project-card .project-detail-container {
   width: 100%;
   height: 100%;
-  border-radius: 16px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -327,7 +328,7 @@ section {
 #project #projects-list .project-card .project-detail-container .project-detail h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 24px 0;
+  margin: 8px 0;
   padding: 8px 0;
   background: black;
   color: rgb(255, 123, 0);
