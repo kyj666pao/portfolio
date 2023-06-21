@@ -63,8 +63,11 @@ section {
     font-size: 3.5rem;
     color: white;
     span {
-      color: #dbd7a9;
       font-family: 'Salsa', cursive;
+      background: linear-gradient(45deg,#ff7300,#c6f00c );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #0000;
     }
   }
   div {
@@ -74,6 +77,10 @@ section {
       color: #dbd7a9;
       span {
         font-family: 'Salsa', cursive;
+        background: linear-gradient(45deg,#ff7300,#c6f00c );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0000;
       }
     }
   }
@@ -88,7 +95,7 @@ section {
 
 .navbar {
   width: 100vw;
-  padding: 8px 0;
+  padding: 6px 0;
   background-color: white;
   position: sticky;
   top: 0;
@@ -229,7 +236,13 @@ section {
       font-size: 1.25rem;
       margin-top: 24px;
     }
-    
+  }
+  #color-block {
+    position: absolute;
+    z-index: 0;
+    left: 70px;
+    bottom: 50px;
+    animation: colorBlock 100s ease-in-out infinite;
   }
 }
 
@@ -415,7 +428,7 @@ section {
 footer {
   width: 100vw;
   padding: 10px 32px;
-  background: linear-gradient(45deg, rgb(240, 109, 49), rgb(240, 255, 26));
+  background: linear-gradient(45deg, rgb(141, 240, 49), rgb(253, 236, 136));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,6 +464,23 @@ footer {
   }
   to {
     top: 30px;
+  }
+}
+
+@keyframes colorBlock {
+  0% {
+    left: 70px;
+    bottom: 50px;
+  } 
+  50% {
+    left: 450px;
+    bottom: 140px;
+    rotate: 0.5turn;
+  }
+  100% {
+    left: 70px;
+    bottom: 50px;
+    rotate: 1turn;
   }
 }
 
@@ -639,12 +669,24 @@ footer {
   #home {
     h2 {
       span {
-        color:rgb(38, 57, 228);
+        background: linear-gradient(45deg,#00b7ff,#a80cf0 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0000;
       }
     }
-    span {
-      color:rgb(38, 57, 228);
+    div {
+      h3 {
+        span {
+          background: linear-gradient(45deg,#00b7ff,#a80cf0 );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0000;
+        }
+      }
     }
+    
+    
   }
   
 }
