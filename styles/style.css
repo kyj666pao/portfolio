@@ -116,6 +116,12 @@ section {
   font-weight: 600;
   color: rgb(92, 89, 89);
 }
+.navbar ul li .active {
+  color: white;
+}
+.navbar ul li .active:hover {
+  color: #ff7300;
+}
 
 .nav-burger {
   position: fixed;
@@ -131,7 +137,7 @@ section {
   transition: all 0.2s ease-in;
 }
 .nav-burger div {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   padding: 36px 16px;
   width: 90vw;
@@ -154,6 +160,7 @@ section {
 .nav-burger div ul li a {
   text-decoration: none;
   font-size: 2.5rem;
+  font-weight: 800;
   color: rgb(255, 123, 0);
 }
 .nav-burger div ul li a:hover {

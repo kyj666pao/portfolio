@@ -8,13 +8,15 @@ window.addEventListener("scroll", (e) => {
     navElm.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
     navElm.style.color = "white";
     navAnchorElm.forEach((a) => {
-      a.style.color = "white";
+      a.classList.add("active")
+      // a.style.color = "white";
     });
     contactSectionElm.classList.add("show");
   } else {
     navElm.style = "";
     navAnchorElm.forEach((a) => {
-      a.style.color = "rgb(255, 123, 0)";
+      a.classList.remove("active")
+      // a.style.color = "rgb(255, 123, 0)";
     });
     contactSectionElm.classList.remove("show");
   }
