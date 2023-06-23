@@ -399,11 +399,12 @@ section {
   overflow: hidden;
 }
 #email a {
+  margin: 10px 30px;
   position: relative;
   z-index: 5;
 }
 #email a img {
-  width: 200px;
+  width: 180px;
   transition: all 0.3s ease-in;
 }
 #email a img:hover {
@@ -649,6 +650,12 @@ footer #footer-contact a img {
     pointer-events: auto;
     opacity: 1;
   }
+  #email a {
+    margin: 0 20px;
+  }
+  #email a img {
+    width: 150px;
+  }
 }
 @media screen and (max-width: 790px) {
   .navbar {
@@ -688,6 +695,12 @@ footer #footer-contact a img {
   }
   footer #footer-contact a img {
     height: 40px;
+  }
+  #email a {
+    margin: 0 15px;
+  }
+  #email a img {
+    width: 100px;
   }
 }
 @media screen and (max-width: 480px) {
