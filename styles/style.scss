@@ -2,7 +2,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 html {
@@ -28,7 +28,7 @@ section {
   }
   h2 {
     font-size: 40px;
-    font-family: 'Bruno Ace', cursive;
+    font-family: "Bruno Ace", cursive;
   }
 }
 
@@ -63,8 +63,8 @@ section {
     font-size: 3.5rem;
     color: white;
     span {
-      font-family: 'Salsa', cursive;
-      background: linear-gradient(45deg,#ff7300,#c6f00c );
+      font-family: "Salsa", cursive;
+      background: linear-gradient(45deg, #ff7300, #c6f00c);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: #0000;
@@ -76,15 +76,15 @@ section {
       font-size: 2.5rem;
       color: #dbd7a9;
       span {
-        font-family: 'Salsa', cursive;
-        background: linear-gradient(45deg,#ff7300,#c6f00c );
+        font-family: "Salsa", cursive;
+        background: linear-gradient(45deg, #ff7300, #c6f00c);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #0000;
       }
     }
   }
-  
+
   #next-section {
     width: 100px;
     margin-top: 50px;
@@ -400,6 +400,34 @@ section {
   }
 }
 
+#email {
+  height: 60vh;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  a {
+    position: relative;
+    z-index: 5;
+    img {
+      width: 200px;
+      transition: all 0.3s ease-in;
+    }
+    img:hover {
+      scale: 1.2;
+    }
+  }
+  #plane {
+    pointer-events: none;
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+    animation: plane 30s ease-in-out infinite;
+  }
+}
+
 #contact {
   width: 80px;
   height: 300px;
@@ -435,7 +463,7 @@ footer {
   align-items: center;
   h6 {
     font-size: 12px;
-    font-family: 'Bruno Ace', cursive;
+    font-family: "Bruno Ace", cursive;
     color: rgb(38, 57, 228);
     text-align: center;
   }
@@ -472,7 +500,7 @@ footer {
   0% {
     left: 70px;
     bottom: 50px;
-  } 
+  }
   50% {
     left: 450px;
     bottom: 140px;
@@ -482,6 +510,57 @@ footer {
     left: 70px;
     bottom: 50px;
     rotate: 1turn;
+  }
+}
+
+@keyframes plane {
+  0% {
+    bottom: 80px;
+    left: 70px;
+  }
+  15% {
+    bottom: 180px;
+    rotate: 0.05turn;
+  }
+  30% {
+    bottom: 90px;
+    rotate: 0.1turn;
+  }
+  45% {
+    bottom: 150px;
+    rotate: 0turn;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 105%;
+    bottom: 90px;
+    rotate: 0.05turn;
+    transform: scaleX(-1);
+  }
+  60% {
+    bottom: 170px;
+    rotate: -0.05turn;
+  }
+  70% {
+    bottom: 40px;
+  }
+  85% {
+    left: -15%;
+    bottom: 230px;
+    transform: scaleX(-1);
+  }
+  90% {
+    transform: scaleX(1);
+  }
+  95% {
+    bottom: 40px;
+    rotate: 0.05;
+    
+  }
+  100% {
+    bottom: 80px;
+    left: 70px;
+    rotate: 0turn;
   }
 }
 
@@ -498,7 +577,7 @@ footer {
       opacity: 0;
     }
     #mypic {
-      width:360px;
+      width: 360px;
       height: 360px;
       object-fit: cover;
       border-radius: 50%;
@@ -584,7 +663,7 @@ footer {
           }
         }
       }
-  
+
       .project-card:hover {
         // img {
         //     transform: scale(1.1);
@@ -598,7 +677,6 @@ footer {
       }
     }
   }
-
 }
 
 @media screen and (max-width: 790px) {
@@ -644,7 +722,6 @@ footer {
       }
     }
   }
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -660,17 +737,19 @@ footer {
 
 @media screen and (min-height: 850px) {
   #home {
-    h2, div, #next-section {
+    h2,
+    div,
+    #next-section {
       transform: translate(0, 40px);
     }
-  } 
+  }
 }
 
 @media screen and (min-height: 990px) {
   #home {
     h2 {
       span {
-        background: linear-gradient(45deg,#00b7ff,#a80cf0 );
+        background: linear-gradient(45deg, #00b7ff, #a80cf0);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #0000;
@@ -679,15 +758,12 @@ footer {
     div {
       h3 {
         span {
-          background: linear-gradient(45deg,#00b7ff,#a80cf0 );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: #0000;
+          background: linear-gradient(45deg, #00b7ff, #a80cf0);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: #0000;
         }
       }
     }
-    
-    
   }
-  
 }

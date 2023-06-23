@@ -382,6 +382,34 @@ section {
   opacity: 1;
 }
 
+#email {
+  height: 60vh;
+  min-height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#email a {
+  position: relative;
+  z-index: 5;
+}
+#email a img {
+  width: 200px;
+  transition: all 0.3s ease-in;
+}
+#email a img:hover {
+  scale: 1.2;
+}
+#email #plane {
+  pointer-events: none;
+  position: absolute;
+  bottom: 80px;
+  left: 70px;
+  animation: plane 30s ease-in-out infinite;
+}
+
 #contact {
   width: 80px;
   height: 300px;
@@ -460,6 +488,55 @@ footer #footer-contact a img {
     left: 70px;
     bottom: 50px;
     rotate: 1turn;
+  }
+}
+@keyframes plane {
+  0% {
+    bottom: 80px;
+    left: 70px;
+  }
+  15% {
+    bottom: 180px;
+    rotate: 0.05turn;
+  }
+  30% {
+    bottom: 90px;
+    rotate: 0.1turn;
+  }
+  45% {
+    bottom: 150px;
+    rotate: 0turn;
+    transform: scaleX(1);
+  }
+  50% {
+    left: 105%;
+    bottom: 90px;
+    rotate: 0.05turn;
+    transform: scaleX(-1);
+  }
+  60% {
+    bottom: 170px;
+    rotate: -0.05turn;
+  }
+  70% {
+    bottom: 40px;
+  }
+  85% {
+    left: -15%;
+    bottom: 230px;
+    transform: scaleX(-1);
+  }
+  90% {
+    transform: scaleX(1);
+  }
+  95% {
+    bottom: 40px;
+    rotate: 0.05;
+  }
+  100% {
+    bottom: 80px;
+    left: 70px;
+    rotate: 0turn;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -615,7 +692,9 @@ footer #footer-contact a img {
   }
 }
 @media screen and (min-height: 850px) {
-  #home h2, #home div, #home #next-section {
+  #home h2,
+  #home div,
+  #home #next-section {
     transform: translate(0, 40px);
   }
 }
