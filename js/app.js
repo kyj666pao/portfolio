@@ -1,4 +1,4 @@
-// -------make navBar transparent after scroll down------
+// -------navBar effect after scroll down------
 const navElm = document.querySelector(".navbar");
 const navAnchorElm = document.querySelectorAll(".navbar ul li a");
 const contactSectionElm = document.querySelector("#contact");
@@ -22,7 +22,7 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-// typed.js -----home page typing animation -----
+// -----home page typing animation (typed.js)-----
 const typed = new Typed("#typed", {
   strings: ["Fullstack Developer", "Software Engineer", "Frontend Designer"],
   typeSpeed: 100,
@@ -33,30 +33,16 @@ const typed = new Typed("#typed", {
   smartBackspace: false,
 });
 
-// const projectCardElm = document.querySelectorAll(".project-card")
-// console.log(projectCardElm)
-// const projectDetailContainer = querySelectorAll(".project-detail-container")
-
-// projectCardElm.forEach(projectCard => {
-//     const projectDetailCardContainer = projectCard.children
-
-//     projectCard.addEventListener("mouseover", (e) => {
-//         console.log(projectDetailCardContainer.classList)
-//         projectDetailCardContainer[0].classList.add("show");
-//     })
-// });
-
-
-// landing animation
+// ----- landing page animation -----
 const text = document.querySelectorAll(".thePaths");
 // console.log("text", text[0].getTotalLength());
 // for (let i = 0; i < text.length; i++) {
 //   console.log(`text number ${i} length is ${text[i].getTotalLength()}`);
 // }
 
-const lastword = document.querySelector("#l30");
+const lastWord = document.querySelector("#l30");
 const animation = document.querySelector("div.landing-animation");
-lastword.addEventListener("animationend", () => {
+lastWord.addEventListener("animationend", () => {
   animation.style =
     "transition: all 1s ease; opacity: 0; pointer-events: none;";
 });

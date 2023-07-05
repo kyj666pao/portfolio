@@ -34,6 +34,7 @@ html {
 
 section {
   width: 100%;
+  min-width: 520px;
   height: 100vh;
   padding-top: 48px;
   background-color: white;
@@ -80,7 +81,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(240, 154, 104, 0.3411764706);
+  background-color: rgba(240, 154, 104, 0.3);
 }
 #home #space {
   height: 80px;
@@ -120,9 +121,9 @@ section {
 .navbar {
   width: 100%;
   padding: 6px 0;
-  background-color: white;
+  background-color: rgb(248, 208, 185);
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 50;
   display: flex;
   justify-content: flex-end;
@@ -139,11 +140,14 @@ section {
   font-weight: 600;
   color: rgb(92, 89, 89);
 }
+.navbar ul li a:hover {
+  color: rgb(255, 94, 0);
+}
 .navbar ul li .active {
   color: white;
 }
 .navbar ul li .active:hover {
-  color: #ff7300;
+  color: #ffae00;
 }
 
 .nav-burger {
@@ -405,7 +409,7 @@ section {
   border-radius: 8px;
 }
 #project #projects-list .project-card:hover .project-detail-container {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   pointer-events: auto;
@@ -443,6 +447,7 @@ section {
 
 #contact {
   width: 80px;
+  min-width: 60px;
   height: 300px;
   background: transparent;
   position: fixed;
