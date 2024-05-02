@@ -61,14 +61,17 @@ section {
   top: 0;
   right: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -10;
-  background-color: rgb(32, 31, 26);
+  background: linear-gradient(45deg, #ff9100, #99f00c);
 }
 #background img {
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -711,9 +714,9 @@ footer #footer-contact a img {
     opacity: 0;
   }
   footer #footer-contact {
-    padding-top: 8px;
+    padding: 8px 40px 0 40px;
     background: transparent;
-    width: 300px;
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-around;
