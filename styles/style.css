@@ -258,7 +258,7 @@ section {
   height: 20px;
 }
 #about #me {
-  min-width: 600px;
+  min-width: 520px;
   max-width: 900px;
   height: 500px;
   padding-top: 100px;
@@ -689,6 +689,9 @@ footer #footer-contact a img {
   }
 }
 @media screen and (max-width: 790px) {
+  #home div h3 {
+    font-size: 2.2rem;
+  }
   .navbar {
     height: 0;
     padding: 0;
@@ -736,7 +739,7 @@ footer #footer-contact a img {
 }
 @media screen and (max-width: 480px) {
   #home h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   #home div h3 {
     font-size: 2rem;
@@ -745,6 +748,22 @@ footer #footer-contact a img {
   section {
     width: 100%;
     min-width: 360px;
+  }
+  .chapter {
+    left: 0;
+  }
+  .chapter img {
+    margin: 8px 13px;
+    height: 25px;
+  }
+  .chapter h2 {
+    font-size: 28px;
+  }
+  #about #me {
+    min-width: 360px;
+  }
+  #about #me p {
+    margin-top: 16px;
   }
   #skill .skill-list {
     padding-top: 20px;
